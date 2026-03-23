@@ -1,23 +1,30 @@
 ---
 title: 'Hello World'
-description: 'First post on my new personal website. Why I decided to build it and what to expect.'
+description: 'First post on my new personal website. A place to write about building products, growth, and AI.'
 pubDate: 'Mar 23 2026'
 ---
 
-This is the first post on my new personal website. I've been meaning to set this up for a while — a place to write about what I'm building, share things I learn, and think out loud.
+After years of having my domain redirect to LinkedIn, I finally built a proper personal website. It's about time.
 
-## What I'm working on
+## Why now?
 
-I run The Software Company of Berlin, where I build SaaS products:
+I've been building things on the internet for over 14 years — from my first startup in Tbilisi to scaling organic search at AirHelp across 24 markets, to co-founding Faircado in Berlin. Through all of that, I never had a place of my own to write.
 
-- **ViralDeck** — a dashboard for tracking short-form video performance across TikTok, YouTube Shorts, and Instagram Reels
-- **SimpleUTM** — a UTM link builder for marketers
-- **RankGuides Score** — website performance monitoring with PageSpeed audits
+Social platforms come and go. Algorithms change. But a personal website is yours. It's the one corner of the internet you actually control.
 
-## Why a personal site
+## What to expect
 
-I wanted a simple, fast, no-nonsense website. No CMS, no database — just markdown files compiled to static HTML. This site is built with [Astro](https://astro.build), styled with Tailwind CSS, and deployed to GitHub Pages.
+I plan to write about the things I spend most of my time on:
 
-The source code is on [GitHub](https://github.com/alinzm/alinezam.com).
+- **Building with AI** — agentic workflows, Claude Code, automation
+- **Growth engineering** — SEO, GEO (Generative Engine Optimization), and building growth into the product
+- **Startup lessons** — what I've learned co-founding Faircado and running RankGuides
+- **Building in public** — shipping SaaS products, open-source tools, and sharing the process
 
-More posts coming soon.
+## The setup
+
+This site is intentionally simple. Astro for static generation, Tailwind for styling, markdown for content, GitHub Pages for hosting. No CMS, no database, no analytics (for now). Just words.
+
+The source code is on [GitHub](https://github.com/alinzm/alinezam.com). Feel free to poke around.
+
+Let's see where this goes.

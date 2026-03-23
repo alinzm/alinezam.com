@@ -23,17 +23,41 @@ const posts = (await getCollection('blog')).sort(
 				<h1 class="mb-4 text-4xl font-bold tracking-tight text-zinc-900">
 					Hi, I'm Ali Nezam
 				</h1>
-				<p class="max-w-2xl text-lg text-zinc-600">
-					Founder & software engineer based in Berlin. I build SaaS products and write about
-					startups, engineering, and building in public.
+				<p class="max-w-2xl text-lg leading-relaxed text-zinc-600">
+					Co-Founder & CTO at <a href="https://faircado.com" target="_blank" rel="noopener noreferrer">Faircado</a>,
+					the AI-powered sustainable shopping assistant. Organic growth leader with 14+ years
+					of experience scaling search-driven acquisition. Based in Berlin.
 				</p>
-				<div class="mt-6 flex gap-4">
+				<p class="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-600">
+					Currently building with AI — from agentic workflows to Generative Engine Optimization (GEO).
+					I also run <a href="https://rankguides.com" target="_blank" rel="noopener noreferrer">RankGuides</a>,
+					a growth consulting agency.
+				</p>
+				<div class="mt-8 flex gap-4">
 					<a href="/about" class="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white no-underline transition-opacity hover:opacity-80">
 						About me
 					</a>
 					<a href="/blog" class="inline-flex items-center gap-2 rounded-lg border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-700 no-underline transition-colors hover:border-zinc-300 hover:bg-zinc-50">
 						Read the blog
 					</a>
+				</div>
+			</section>
+
+			<section class="mb-16">
+				<h2 class="mb-6 text-xl font-semibold text-zinc-900">What I'm Working On</h2>
+				<div class="space-y-4">
+					<div class="rounded-lg border border-zinc-100 p-5">
+						<h3 class="font-medium text-zinc-900">Faircado</h3>
+						<p class="mt-1 text-sm text-zinc-500">AI-powered browser extension that finds second-hand alternatives while you shop online. Fast Company's Most Innovative Companies 2025. Slush 100 winner.</p>
+					</div>
+					<div class="rounded-lg border border-zinc-100 p-5">
+						<h3 class="font-medium text-zinc-900">RankGuides</h3>
+						<p class="mt-1 text-sm text-zinc-500">Growth consulting agency — SEO, GEO (Generative Engine Optimization), Google Ads, and AI-first optimization strategies.</p>
+					</div>
+					<div class="rounded-lg border border-zinc-100 p-5">
+						<h3 class="font-medium text-zinc-900">Open Source</h3>
+						<p class="mt-1 text-sm text-zinc-500">Building open-source tools like Open Accelerator (startup playbook for founders) and LifeSheet (auto time tracking with AI).</p>
+					</div>
 				</div>
 			</section>
 
@@ -52,7 +76,7 @@ const posts = (await getCollection('blog')).sort(
 									</h3>
 								</div>
 								{post.data.description && (
-									<p class="mt-1 text-sm text-zinc-500 sm:ml-[calc(theme(spacing.4)+theme(fontSize.sm[0])*6)]">
+									<p class="mt-1 text-sm text-zinc-500">
 										{post.data.description}
 									</p>
 								)}
