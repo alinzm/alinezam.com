@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: 'Inter', system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+	body {
+		@apply font-sans text-zinc-800 antialiased;
+		margin: 0;
+		padding: 0;
+		background: #fff;
+		font-size: 18px;
+		line-height: 1.7;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		@apply font-semibold text-zinc-900 tracking-tight;
+		margin: 0 0 0.5rem 0;
+		line-height: 1.2;
+	}
+
+	h1 { font-size: 2.5em; }
+	h2 { font-size: 1.75em; }
+	h3 { font-size: 1.375em; }
+
+	a {
+		@apply text-zinc-900 underline decoration-zinc-300 underline-offset-2 transition-colors;
+	}
+	a:hover {
+		@apply decoration-zinc-900;
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+
+	code {
+		@apply bg-zinc-100 text-zinc-800 rounded-sm px-1.5 py-0.5 text-sm font-mono;
+	}
+
+	pre {
+		@apply rounded-lg p-5 overflow-x-auto;
+	}
+	pre > code {
+		all: unset;
+	}
+
+	blockquote {
+		@apply border-l-4 border-zinc-300 pl-5 italic text-zinc-600;
+		margin: 1.5em 0;
+	}
+
+	hr {
+		@apply border-t border-zinc-200 my-8;
+	}
+}
+
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}

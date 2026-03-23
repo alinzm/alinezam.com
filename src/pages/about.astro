@@ -1,0 +1,38 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="About - Ali Nezam" description="Founder & software engineer based in Berlin, building SaaS products." />
+	</head>
+	<body>
+		<Header />
+		<main class="mx-auto max-w-3xl px-6 py-16">
+			<h1 class="mb-8 text-3xl font-bold tracking-tight text-zinc-900">About</h1>
+			<div class="prose space-y-6 text-zinc-600">
+				<p>
+					I'm Ali Nezam, a founder and software engineer based in Berlin. I build SaaS products
+					and run <strong class="text-zinc-900">The Software Company of Berlin</strong>.
+				</p>
+				<p>
+					Currently working on:
+				</p>
+				<ul class="list-disc space-y-2 pl-6">
+					<li><strong class="text-zinc-900">ViralDeck</strong> &mdash; Track when your short-form videos go viral across TikTok, YouTube Shorts, and Instagram Reels</li>
+					<li><strong class="text-zinc-900">SimpleUTM</strong> &mdash; UTM link builder for marketers</li>
+					<li><strong class="text-zinc-900">RankGuides Score</strong> &mdash; Website performance monitoring with PageSpeed audits</li>
+				</ul>
+				<p>
+					I write about startups, engineering, and building products in public.
+					Feel free to reach out on <a href="https://linkedin.com/in/alinezam">LinkedIn</a>
+					or <a href="https://x.com/alinezam">X</a>.
+				</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

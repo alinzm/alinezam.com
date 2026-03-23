@@ -1,0 +1,67 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main class="mx-auto max-w-3xl px-6 py-16">
+			<section class="mb-16">
+				<h1 class="mb-4 text-4xl font-bold tracking-tight text-zinc-900">
+					Hi, I'm Ali Nezam
+				</h1>
+				<p class="max-w-2xl text-lg text-zinc-600">
+					Founder & software engineer based in Berlin. I build SaaS products and write about
+					startups, engineering, and building in public.
+				</p>
+				<div class="mt-6 flex gap-4">
+					<a href="/about" class="inline-flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white no-underline transition-opacity hover:opacity-80">
+						About me
+					</a>
+					<a href="/blog" class="inline-flex items-center gap-2 rounded-lg border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-700 no-underline transition-colors hover:border-zinc-300 hover:bg-zinc-50">
+						Read the blog
+					</a>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="mb-8 text-xl font-semibold text-zinc-900">Recent Posts</h2>
+				<ul class="space-y-6">
+					{posts.slice(0, 5).map((post) => (
+						<li>
+							<a href={`/blog/${post.id}/`} class="group block no-underline">
+								<div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-4">
+									<time class="shrink-0 text-sm tabular-nums text-zinc-400">
+										<FormattedDate date={post.data.pubDate} />
+									</time>
+									<h3 class="text-base font-medium text-zinc-900 transition-colors group-hover:text-zinc-600">
+										{post.data.title}
+									</h3>
+								</div>
+								{post.data.description && (
+									<p class="mt-1 text-sm text-zinc-500 sm:ml-[calc(theme(spacing.4)+theme(fontSize.sm[0])*6)]">
+										{post.data.description}
+									</p>
+								)}
+							</a>
+						</li>
+					))}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
