@@ -5,12 +5,14 @@
   "engines": {
     "node": ">=22.12.0"
   },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"photos:init": "./scripts/upload-photos.sh --init",
+		"photos:upload": "./scripts/upload-photos.sh"
+	},
   "dependencies": {
     "@astrojs/mdx": "^5.0.2",
     "@astrojs/rss": "^4.0.17",

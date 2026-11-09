@@ -1,0 +1,89 @@
+---
+import PhotoLayout from '../../layouts/PhotoLayout.astro';
+import photosData from '../../data/photos.json';
+import { resolvePhotoSrc } from '../../lib/photos';
+
+const projects = photosData.projects;
+// Filmstrip shows the first frame of each project, widest to narrowest.
+const filmstrip = projects.map((project, i) => ({
+	photo: project.photos[0],
+	project,
+	flex: [1.4, 1, 0.7][i] ?? 1,
+}));
+const projectCount = String(projects.length).padStart(2, '0');
+---
+
+<PhotoLayout
+	title="Photos - Ali Nezamolmaleki"
+	description="Street photography from Berlin and beyond. Black & white, high contrast, and the occasional potato."
+>
+	<main>
+		<section class="relative px-5 pb-10 pt-10 sm:px-8 sm:pt-14">
+			<h1
+				class="font-['Anton',sans-serif] text-[clamp(56px,13vw,148px)] uppercase leading-[0.9] tracking-[-0.01em] text-[#f2f0eb] [text-wrap:balance]"
+			>
+				Shot on<br />the street.
+			</h1>
+			<div class="mt-7 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+				<p class="max-w-[380px] text-[15px] leading-[1.55] text-[#f2f0eb]/70">
+					Black &amp; white, high contrast, and the occasional potato. Street photography from
+					Berlin and beyond.
+				</p>
+				<p class="font-['Space_Mono',monospace] text-[11px] text-[#f2f0eb]/45">
+					BERLIN · f/8 AND BE THERE
+				</p>
+			</div>
+		</section>
+
+		<section class="flex gap-1 px-5 sm:px-8" aria-label="Featured photos">
+			{filmstrip.map(({ photo, project, flex }) => (
+				<a
+					href={`/photos/${project.slug}`}
+					class="group block h-40 overflow-hidden no-underline sm:h-[300px]"
+					style={`flex: ${flex}`}
+					aria-label={`View project: ${project.title}`}
+				>
+					<img
+						src={resolvePhotoSrc(photo.src, photosData.baseUrl)}
+						alt={photo.alt}
+						width={photo.width}
+						height={photo.height}
+						loading="eager"
+						decoding="async"
+						class="h-full w-full rounded-none object-cover transition-opacity group-hover:opacity-80 motion-reduce:transition-none"
+					/>
+				</a>
+			))}
+		</section>
+
+		<section class="px-5 pb-3 pt-11 sm:px-8">
+			<h2
+				class="mb-4 font-['Space_Mono',monospace] text-[11px] font-normal tracking-[0.2em] text-[#f2f0eb]/45"
+			>
+				PROJECTS — {projectCount}
+			</h2>
+			<ul class="flex flex-col">
+				{projects.map((project) => (
+					<li class="border-t border-white/[0.14] last:border-b">
+						<a
+							href={`/photos/${project.slug}`}
+							class="group flex flex-col justify-between gap-1 py-5 no-underline sm:flex-row sm:items-baseline"
+						>
+							<span
+								class:list={[
+									"font-['Anton',sans-serif] text-[clamp(30px,6vw,44px)] uppercase leading-tight transition-opacity group-hover:opacity-70 motion-reduce:transition-none",
+									project.accent ? 'text-[#e8542f]' : 'text-[#f2f0eb]',
+								]}
+							>
+								{project.title}
+							</span>
+							<span class="font-['Space_Mono',monospace] text-xs text-[#f2f0eb]/50">
+								{project.meta} <span aria-hidden="true">→</span>
+							</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		</section>
+	</main>
+</PhotoLayout>

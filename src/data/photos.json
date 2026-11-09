@@ -1,0 +1,44 @@
+{
+	"baseUrl": "https://viraldeck.nbg1.your-objectstorage.com/alinezam-photos",
+	"projects": [
+		{
+			"slug": "berlins-nights",
+			"title": "Berlin's Nights",
+			"meta": "B&W · 2024–26",
+			"description": "The city after dark — high contrast, hard shadows, and the people who live in them.",
+			"accent": false,
+			"photos": [
+				{ "src": "/photos-placeholders/bn1.svg", "width": 1600, "height": 1067, "alt": "Placeholder — Berlin's Nights 001" },
+				{ "src": "/photos-placeholders/bn2.svg", "width": 1200, "height": 1600, "alt": "Placeholder — Berlin's Nights 002" },
+				{ "src": "/photos-placeholders/bn3.svg", "width": 1600, "height": 1200, "alt": "Placeholder — Berlin's Nights 003" },
+				{ "src": "/photos-placeholders/bn4.svg", "width": 1200, "height": 1500, "alt": "Placeholder — Berlin's Nights 004" }
+			]
+		},
+		{
+			"slug": "streets",
+			"title": "Streets",
+			"meta": "B&W · ONGOING",
+			"description": "Strangers, photographed politely. Unstaged moments from Berlin and beyond.",
+			"accent": false,
+			"photos": [
+				{ "src": "/photos-placeholders/st1.svg", "width": 1200, "height": 1600, "alt": "Placeholder — Streets 001" },
+				{ "src": "/photos-placeholders/st2.svg", "width": 1600, "height": 1067, "alt": "Placeholder — Streets 002" },
+				{ "src": "/photos-placeholders/st3.svg", "width": 1200, "height": 1200, "alt": "Placeholder — Streets 003" },
+				{ "src": "/photos-placeholders/st4.svg", "width": 1600, "height": 1200, "alt": "Placeholder — Streets 004" }
+			]
+		},
+		{
+			"slug": "potatoes-and-more",
+			"title": "Potatoes and More",
+			"meta": "COLOR · HUMOR",
+			"description": "Life in loud color. Vegetables may appear. Viewer discretion advised.",
+			"accent": true,
+			"photos": [
+				{ "src": "/photos-placeholders/pm1.svg", "width": 1600, "height": 1200, "alt": "Placeholder — Potatoes and More 001" },
+				{ "src": "/photos-placeholders/pm2.svg", "width": 1200, "height": 1600, "alt": "Placeholder — Potatoes and More 002" },
+				{ "src": "/photos-placeholders/pm3.svg", "width": 1600, "height": 1067, "alt": "Placeholder — Potatoes and More 003" },
+				{ "src": "/photos-placeholders/pm4.svg", "width": 1200, "height": 1200, "alt": "Placeholder — Potatoes and More 004" }
+			]
+		}
+	]
+}

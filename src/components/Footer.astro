@@ -3,7 +3,14 @@ const today = new Date();
 ---
 
 <footer class="border-t border-zinc-100 py-8">
-	<div class="mx-auto max-w-3xl px-6 text-center text-sm text-zinc-400">
-		&copy; {today.getFullYear()} Ali Nezamolmaleki. All rights reserved.
+	<div class="mx-auto max-w-3xl px-6 text-center">
+		<nav class="mb-4 flex items-center justify-center gap-6" aria-label="Footer">
+			<a href="/blog" class="text-sm font-medium text-zinc-500 no-underline transition-colors hover:text-zinc-900">Blog</a>
+			<a href="/photos" class="text-sm font-medium text-zinc-500 no-underline transition-colors hover:text-zinc-900">Photos</a>
+			<a href="/about" class="text-sm font-medium text-zinc-500 no-underline transition-colors hover:text-zinc-900">About</a>
+		</nav>
+		<p class="text-sm text-zinc-400">
+			&copy; {today.getFullYear()} Ali Nezamolmaleki. All rights reserved.
+		</p>
 	</div>
 </footer>
