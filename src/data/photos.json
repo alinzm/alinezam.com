@@ -1,17 +1,16 @@
 {
-	"baseUrl": "https://viraldeck.nbg1.your-objectstorage.com/alinezam-photos",
+	"baseUrl": "https://alinezam.com/photos",
 	"projects": [
 		{
 			"slug": "berlins-nights",
 			"title": "Berlin's Nights",
-			"meta": "B&W · 2024–26",
+			"meta": "B&W · 2019–21",
 			"description": "The city after dark — high contrast, hard shadows, and the people who live in them.",
 			"accent": false,
 			"photos": [
-				{ "src": "/photos-placeholders/bn1.svg", "width": 1600, "height": 1067, "alt": "Placeholder — Berlin's Nights 001" },
-				{ "src": "/photos-placeholders/bn2.svg", "width": 1200, "height": 1600, "alt": "Placeholder — Berlin's Nights 002" },
-				{ "src": "/photos-placeholders/bn3.svg", "width": 1600, "height": 1200, "alt": "Placeholder — Berlin's Nights 003" },
-				{ "src": "/photos-placeholders/bn4.svg", "width": 1200, "height": 1500, "alt": "Placeholder — Berlin's Nights 004" }
+				{ "src": "berlins-nights/01-kudamm.jpg", "width": 2160, "height": 1234, "alt": "A pedestrian with an umbrella blurs across a rain-soaked Ku'damm crossing at night, a lit department store behind." },
+				{ "src": "berlins-nights/02-doorway.jpg", "width": 1732, "height": 1988, "alt": "A man in silhouette carries bags out through a bright doorway, long shadows fanning across the floor toward the camera." },
+				{ "src": "berlins-nights/03-tram.jpg", "width": 2160, "height": 1452, "alt": "A tram rounds a curve on a dark Berlin street, streetlights receding into the distance along the rails." }
 			]
 		},
 		{
@@ -21,10 +20,11 @@
 			"description": "Strangers, photographed politely. Unstaged moments from Berlin and beyond.",
 			"accent": false,
 			"photos": [
-				{ "src": "/photos-placeholders/st1.svg", "width": 1200, "height": 1600, "alt": "Placeholder — Streets 001" },
-				{ "src": "/photos-placeholders/st2.svg", "width": 1600, "height": 1067, "alt": "Placeholder — Streets 002" },
-				{ "src": "/photos-placeholders/st3.svg", "width": 1200, "height": 1200, "alt": "Placeholder — Streets 003" },
-				{ "src": "/photos-placeholders/st4.svg", "width": 1600, "height": 1200, "alt": "Placeholder — Streets 004" }
+				{ "src": "streets/01-checkerboard.jpg", "width": 2400, "height": 1749, "alt": "A cyclist rides over a checkerboard-painted street into low, blinding sunlight between old buildings." },
+				{ "src": "streets/02-saxophone.jpg", "width": 2000, "height": 1164, "alt": "An older street musician in a hat plays saxophone on a stool as an older man walks past on the cobblestones." },
+				{ "src": "streets/03-hand.jpg", "width": 1870, "height": 1870, "alt": "A young woman gently touches the cheek of an older woman in glasses in a narrow doorway." },
+				{ "src": "streets/04-beach.jpg", "width": 2128, "height": 1198, "alt": "Three small children stand at the water's edge on a bright, almost white beach." },
+				{ "src": "streets/05-rotterdam.jpg", "width": 2400, "height": 2398, "alt": "Travellers in silhouette cross the hall of Rotterdam Centraal beneath the station's glass facade and mirrored lettering." }
 			]
 		},
 		{
@@ -34,10 +34,9 @@
 			"description": "Life in loud color. Vegetables may appear. Viewer discretion advised.",
 			"accent": true,
 			"photos": [
-				{ "src": "/photos-placeholders/pm1.svg", "width": 1600, "height": 1200, "alt": "Placeholder — Potatoes and More 001" },
-				{ "src": "/photos-placeholders/pm2.svg", "width": 1200, "height": 1600, "alt": "Placeholder — Potatoes and More 002" },
-				{ "src": "/photos-placeholders/pm3.svg", "width": 1600, "height": 1067, "alt": "Placeholder — Potatoes and More 003" },
-				{ "src": "/photos-placeholders/pm4.svg", "width": 1200, "height": 1200, "alt": "Placeholder — Potatoes and More 004" }
+				{ "src": "potatoes-and-more/01-potatoes.jpg", "width": 1280, "height": 1280, "alt": "A man lies on sacks of potatoes in the back of a turquoise van, looking up at the camera, with more sacks on the ground in front." },
+				{ "src": "potatoes-and-more/02-ubahn.jpg", "width": 2160, "height": 1620, "alt": "A yellow U-Bahn train rushes past a station poster of people lounging in swimwear." },
+				{ "src": "potatoes-and-more/03-umbrella.jpg", "width": 1921, "height": 2400, "alt": "A woman in a swimsuit walks across a dry field under a white umbrella, a striped towel in her hand, parked cars behind." }
 			]
 		}
 	]

@@ -5,14 +5,14 @@
   "engines": {
     "node": ">=22.12.0"
   },
-	"scripts": {
-		"dev": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro",
-		"photos:init": "./scripts/upload-photos.sh --init",
-		"photos:upload": "./scripts/upload-photos.sh"
-	},
+  "scripts": {
+    "dev": "astro dev",
+    "dev:photos": "PUBLIC_PHOTOS_LOCAL=1 astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "photos:upload": "./scripts/upload-photos.sh"
+  },
   "dependencies": {
     "@astrojs/mdx": "^5.0.2",
     "@astrojs/rss": "^4.0.17",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.2",
-    "tailwindcss": "^4.2.2"
+    "tailwindcss": "^4.2.2",
+    "wrangler": "^4.158.0"
   }
 }

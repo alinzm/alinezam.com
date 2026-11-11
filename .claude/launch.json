@@ -1,0 +1,11 @@
+{
+	"version": "0.0.1",
+	"configurations": [
+		{
+			"name": "photos-preview",
+			"runtimeExecutable": "npm",
+			"runtimeArgs": ["run", "dev:photos"],
+			"port": 4321
+		}
+	]
+}
